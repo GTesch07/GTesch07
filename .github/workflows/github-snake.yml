@@ -9,6 +9,9 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
+      - name: Create dist folder
+        run: mkdir -p dist
+
       - uses: Platane/snk@master
         with:
           github_user_name: GTesch07
